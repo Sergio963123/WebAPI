@@ -1,0 +1,315 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <main class="">
+        <div class="container-fluid p-0">
+            <button type="submit" onclick="location.href='/RegistroExpediente/RegistroExpediente'" class="btn btn-primary">Nuevo Expediente</button>
+            <button type="submit" class="btn btn-primary">Consultar</button>
+            <br />
+            <br />
+
+            <h1 class="h3 mb-3">Lista de Expediente</h1>
+            <label>EXTERNO</label>
+
+            <div class="row">
+
+                <div class="col-md-15 col-xl-15">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="account" role="tabpanel">
+
+                            <div class="card">
+                                <div class="card-header">
+
+                                    <h5 class="card-title mb-0">Datos del Solicitante</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="mb-3 col-md-4">
+                                                <label class="form-label" for="inputEmail4">Remitente:</label>
+                                                <input type="email" class="form-control" id="inputEmail4" placeholder="Ingrese el Nombre del Contribuyente">
+                                            </div>
+                                            <div class="mb-3 col-md-8">
+                                                <label class="form-label" for="inputEmail4"> datos</label>
+
+                                                <input type="email" class="form-control" id="inputEmail4" placeholder="Ingrese el Nombre del Contribuyente">
+                                            </div>
+
+                                            <div class="mb-3 col-md-3">
+                                                <label class="form-label" for="inputLastName">FechaInico:</label>
+                                                <input type="date" class="form-control" id="inputLastName">
+                                            </div>
+
+                                            <div class="mb-3 col-md-3">
+                                                <label class="form-label" for="inputLastName">FechaFin:</label>
+                                                <input type="date" class="form-control" id="inputLastName">
+                                            </div>
+
+                                            <div class="mb-3 col-md-5">
+                                                <label class="form-label" for="inputLastName">Nro Expediente:</label>
+                                                <input type="text" class="form-control" id="inputLastName" placeholder="Nro Folio">
+                                            </div>
+
+
+                                        </div>
+                                        <br />
+                                        @*<div class="mb-3 col-md-5">
+                                                <h5 class="card-title mb-0">
+                                                    Listado de Expediente
+                                                </h5>
+                                            </div>*@
+
+                                        <div class="col-12 col-xl-12">
+                                            <div class="card">
+                                                <div class="card-header" style="background:#4511f7">
+                                                    <h5 class="card-title" style="color:#ffffff">Listado de Expediente</h5>
+
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table" id="lista">
+                                                        <thead>
+                                                            <tr>
+                                                                <th style="font-size:16px;"></th>
+                                                                <th style="font-size:16px;">Nro-Expediente</th>
+                                                                <th style="font-size:16px;">Documento</th>
+                                                                <th style="font-size:16px;">Descripcion</th>
+                                                                <th style="font-size:16px;">Remitente</th>
+                                                                <th style="font-size:16px;">Nro-Folios</th>
+                                                                <th style="font-size:16px;">Fecha de Tramite</th>
+                                                                <th style="font-size:16px;">Estado Tramite</th>
+                                                                <th style="font-size:16px;">Prioridad</th>
+                                                                <th style="font-size:16px;">Archivos</th>
+                                                                <th style="font-size:16px;">Modificar</th>
+                                                                <th style="font-size:16px;">HojaRuta</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        @*<button type="submit" class="btn btn-primary">Save changes</button>*@
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                     
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        @*<button type="button" class="btn btn-primary" data-backdrop="static" data-keyboard="false"  data-toggle="modal" data-target="#exampleModal">
+                Derivar
+            </button>*@
+
+        <!-- Modal DERIVAR EXPEDIENTE -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="Derivaar" aria-labelledby="Derivaar" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="Derivaar"><STRONG>ENVIAR EXPEDIENTE</STRONG></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <button type="submit" class="btn btn-primary">Enviar Expediente</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <br />
+                        <br />
+                        <div class="card-header" style="background:#4800ff; height:40px">
+                            <h5 class="card-title" style="color:#ffffff; font-size:15px;"><strong>OFICINA DESTINO:</strong></h5>
+                        </div>
+
+                        <div class="row">
+
+
+                            <div class="mb-3 col-md-10">
+                                <label class="form-label" for="inputState">Oficina:</label>
+                                <select id="Oficina" class="form-control bite">
+                                    <option value="">Seleccione la Oficina</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3 col-md-8">
+                                <label class="form-label" for="inputLastName">Responsable</label>
+                               @*<input type="text" class="form-control" id="inputLastName" value="@Session["nombresCompletos"].ToString()" readonly="readonly" placeholder="Ingrese el Responsable">*@
+                            </div>
+
+                        </div>
+
+
+                        <div class="card-header" style="background:#4800ff; height:40px">
+                            <h5 class="card-title" style="color:#ffffff; font-size:15px;"><strong>CON COPIA A:</strong></h5>
+                        </div>
+
+                        <div class="row">
+
+
+                            <div class="mb-3 col-md-9">
+                                <label class="form-label" for="inputState">Oficina Destino:</label>
+                                <select id="Deoficina" class="form-control bite">
+                                    <option value="">Seleccione la Oficina</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 col-md-3">
+                                <label class="form-label" for="inputState">Copia:</label>
+                                <button id="adicionar" onclick="AgregarTemporal()" class="btn btn-success" type="button">Agregar Copia</button>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-xl-12">
+                            <div class="card">
+                                @*<div class="card-header">
+                                        <h5 class="card-title">Bordered Table</h5>
+                                        <h6 class="card-subtitle text-muted">Add <code>.table-bordered</code> for borders on all sides of the table and cells.</h6>
+                                    </div>*@
+                                <table class="table table-bordered" id="mytable">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:80%; background:#5760ac">Oficina</th>
+                                            <th style="width:10%; background:#5760ac"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="GAA">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal DE ARCHIVOS DETALLES -->
+        <div class="modal fade" id="ListaArchivo" tabindex="-1" role="dialog" aria-labelledby="ListaArchivo" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ListaArchivo"><STRONG>ARCHIVOS ADJUNTOS</STRONG></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table class="table" id="detarch">
+                                <thead>
+                                    @*<tr>
+                                            <th></th>
+                                        </tr>*@
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        @*<button type="button" class="btn btn-primary">Save changes</button>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+
+            $(function () {
+                consultarVentas();
+            })
+
+
+
+
+
+            function consultarVentas() {
+                $.ajax({
+                    //cache: false,
+                    url: '/RegistroExpediente/ListaRegistrosTramites',
+                    type: 'POST',
+                    //data: { nombre: idnombre, apellido: idapellido, email: idemail, usuario: idusuario, clave: idclave, pais: idpais },
+                    datatype: 'Json',
+                    success: function (data) {
+
+                        let table = $('#lista > tbody');
+
+                        table.empty();
+                        for (var i = 0; i < data.length; i++) {
+                            var tr = `<tr>
+                  <td  style="font-size:12px;">
+                  <button type="button" onclick="DerivarOficina(`+ data[i].anio + `,` + data[i].numtramite + `,` + data[i].id + `)" class="btn btn-primary">
+                    Derivar
+                  </button>
+                  </td>
+                  <td  style="font-size:12px; ">`+ data[i].numtramite + `</td>
+                  <td  style="font-size:12px; ">`+ data[i].tipo + `</td>
+                  <td  style="font-size:12px; ">`+ data[i].descripcion + `</td>
+                  <td  style="font-size:12px; ">`+ data[i].datospersona + `</td>
+                  <td  style="font-size:12px; ">`+ data[i].numfolios + `</td>
+                  <td  style="font-size:12px; ">`+ data[i].fecregistro + `</td>
+                  <td  style="font-size:12px; ">`+ data[i].estado + `</td>
+                  <td  style="font-size:12px; ">`+ data[i].prioridad + `</td>
+                  <td style="text-align: center;">
+                  <a onclick="ConsultarArchivosCargados(`+ data[i].anio + data[i].numtramite + `)" title="archivos cargados" ><i style="font-size:15px;"class="fas fa-folder-open"></i></a>
+                  </td>
+                  <td  style="text-align: center;">
+                  <a onclick="EditarTramite(`+ data[i].anio + data[i].numtramite + `)" title="editar registro"><i  style="font-size:15px;" class="fas fa-pencil-alt"></i></a>
+                  </td>
+                  <td  style="text-align: center;">
+                  <a onclick="HojadeRuta(`+ data[i].anio + data[i].numtramite + `)" title="Seguimiento"><i style="font-size:15px;" class="fas fa-file-invoice"></i> </a>
+                  </td>
+                 </tr>`;
+                            table.append(tr)
+
+                        }
+                    }, complete: function (s) {
+
+
+
+                    }, error: function (s) {
+                        conselo.log('error')
+                    }
+                });
+
+            }
+
+
+
+
+        </script>
+
+
+
+
+
+
+    </main>
+</body>
+</html>
