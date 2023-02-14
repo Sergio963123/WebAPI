@@ -29,7 +29,6 @@ namespace WebVentas.Controllers
             {
                 var json_respuesta = await response.Content.ReadAsStringAsync();
                 lista = JsonConvert.DeserializeObject<List<Ventas>>(json_respuesta);
-           
             }
 
             return View(lista);
