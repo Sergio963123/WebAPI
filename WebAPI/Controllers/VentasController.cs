@@ -20,7 +20,7 @@ namespace WebAPI.Controllers
     // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class VentasController : ControllerBase
     {
-
+        //in Memory database
         private readonly VentasContext _context;
         public VentasController(VentasContext context)
             {
@@ -42,25 +42,23 @@ namespace WebAPI.Controllers
         [HttpGet]
         public async Task<ActionResult> Get()
         {
-
             var ventas = await _context._ventas.ToListAsync();
-
             return Ok(ventas);
         }
 
-        ////Bsucar por id
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult> GetById(int id)
-        //{
+        //Bsucar por id 
+        [HttpGet("{id}")]
+        public async Task<ActionResult> GetById(int id)
+        {
 
-        //    var cliente = await _context._ventas.FirstOrDefaultAsync(x => x.Id == id);
-        //    if (cliente == null)
-        //    {
-        //        var nf = NotFound("La Venta " + id.ToString() + " no existe.");
-        //        return nf;
-        //    }
-        //    return Ok(cliente);
-        //}
+            var cliente = await _context._ventas.FirstOrDefaultAsync(x => x.Id == id);
+            if (cliente == null)
+            {
+                var nf = NotFound("La Venta " + id.ToString() + " no existe.");
+                return nf;
+            }
+            return Ok(cliente);
+        }
 
         //Agregar
         [HttpPost]
@@ -70,7 +68,6 @@ namespace WebAPI.Controllers
             _context._ventas.Add(x);
             await _context.SaveChangesAsync();
             var mensaje = "Se registro correctamente";
-
             return Ok(mensaje);
         }
 
@@ -79,7 +76,6 @@ namespace WebAPI.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, Ventas ventas)
         {
-
             if (id == ventas.Id)
             {
                 _context.Entry(ventas).State = EntityState.Modified;
@@ -88,7 +84,6 @@ namespace WebAPI.Controllers
 
             }
             return BadRequest();
-
         }
 
 

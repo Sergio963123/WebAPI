@@ -203,4 +203,4 @@ C:\Users\thepo\Desktop\Sofftek2\WebAPI\obj\Debug\net5.0\WebAPI.RazorCoreGenerate
 C:\Users\thepo\Desktop\Sofftek2\WebAPI\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\thepo\Desktop\Sofftek2\WebAPI\obj\Debug\net5.0\WebAPI.RazorTargetAssemblyInfo.cs
 C:\Users\thepo\Desktop\Sofftek2\WebAPI\obj\Debug\net5.0\WebAPI.Views.pdb
-C:\Users\thepo\Desktop\Sofftek2\WebAPI\obj\Debug\net5.0\Razor\Views\Index\Index.cshtml.g.cs
+C:\Users\thepo\Desktop\Sofftek2\WebAPI\obj\Debug\net5.0\WebAPI.csprojAssemblyReference.cache

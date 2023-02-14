@@ -1,0 +1,19 @@
+FROM mrc.microsoft.com/dotnet/sdk:5.0 as build
+WORDKDIR webapp
+
+EXPOSE 80
+EXPOSE 2024
+
+#COPY PROJECT FILES
+COPY ./*.csproj
+RUN dotnet restore
+
+#COPY EVERYHING
+COPY . .
+RUN dotnet publish -c Release -o out
+
+#Build image
+FROM mcr.microsoft.com/dotnet/sdk:5.0
+WORKDIR /webapp
+COPY --from=build /weapp/ out.
+ENTRYPOINT ["dotnet","WebAPI.dll"]
