@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thepo\\Desktop\\API\\WebAPI\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\thepo\\Desktop\\Sofftek2\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thepo\\Desktop\\API\\WebAPI\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\thepo\\Desktop\\Sofftek2\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thepo\\Desktop\\API\\WebAPI\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\thepo\\Desktop\\Sofftek2\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\thepo\\Desktop\\API\\WebAPI\\WebAPI\\WebAPI.csproj",
+        "projectPath": "C:\\Users\\thepo\\Desktop\\Sofftek2\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\thepo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thepo\\Desktop\\API\\WebAPI\\WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\thepo\\Desktop\\Sofftek2\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thepo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -69,6 +69,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
