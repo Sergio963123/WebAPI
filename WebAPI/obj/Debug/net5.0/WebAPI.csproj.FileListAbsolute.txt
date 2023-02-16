@@ -208,3 +208,9 @@ C:\Users\thepo\Desktop\Sofftek2\WebAPI\obj\Debug\net5.0\WebAPI.dll
 C:\Users\thepo\Desktop\Sofftek2\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
 C:\Users\thepo\Desktop\Sofftek2\WebAPI\obj\Debug\net5.0\WebAPI.pdb
 C:\Users\thepo\Desktop\Sofftek2\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
+C:\Users\thepo\Desktop\Sofftek2\WebAPI\bin\Debug\net5.0\out\out\web.config
+C:\Users\thepo\Desktop\Sofftek2\WebAPI\bin\Debug\net5.0\out\out\appsettings.Development.json
+C:\Users\thepo\Desktop\Sofftek2\WebAPI\bin\Debug\net5.0\out\out\appsettings.json
+C:\Users\thepo\Desktop\Sofftek2\WebAPI\bin\Debug\net5.0\out\out\WebAPI.deps.json
+C:\Users\thepo\Desktop\Sofftek2\WebAPI\bin\Debug\net5.0\out\out\WebAPI.runtimeconfig.json
+C:\Users\thepo\Desktop\Sofftek2\WebAPI\obj\Debug\net5.0\WebAPI.csprojAssemblyReference.cache

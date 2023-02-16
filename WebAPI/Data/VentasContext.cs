@@ -13,7 +13,6 @@ namespace WebAPI.Data
         public VentasContext(DbContextOptions<VentasContext> options)
            : base(options) { }
 
-
         public DbSet<Ventas> _ventas { get; set; }
     }
 }
