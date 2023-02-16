@@ -16,7 +16,7 @@ namespace WebVentas
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Ventas", action = "Ventas", id = UrlParameter.Optional }
             );
         }
     }

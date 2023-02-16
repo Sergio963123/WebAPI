@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sYd+Sv5K607V0O2Phy/EXoWcpbWD+AGmkj21wlAFCgGD1QzkdhZS66c7X7RLoM6CKUTF6Xwb4LBWILwS3KHrAA==",
+  "dgSpecHash": "F/x1AzkUC+9mv4QBLY1+saQWoqy6utptySQ2Zh2D9bfR6JHuRCSkMrqU5kixLUzWsvq7xa+nCk/9USJDkYD/tQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\thepo\\Desktop\\Sofftek2\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -104,8 +104,7 @@
     "C:\\Users\\thepo\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512",
     "C:\\Users\\thepo\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\thepo\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\thepo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\thepo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+    "C:\\Users\\thepo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }
